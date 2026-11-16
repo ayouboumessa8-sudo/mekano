@@ -1,0 +1,57 @@
+{
+  "id": "./index.html",
+  "name": "MEKANO® Maroc — Pièces Auto",
+  "short_name": "MEKANO",
+  "description": "Magasin en ligne de pièces détachées auto au Maroc : freinage, filtres, embrayage, distribution, suspension, pneus, huiles et outillage.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0B0F14",
+  "theme_color": "#0B0F14",
+  "lang": "fr-MA",
+  "dir": "ltr",
+  "categories": ["shopping", "automotive"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Catalogue pièces auto",
+      "short_name": "Catalogue",
+      "url": "./index.html#offres",
+      "icons": [{ "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Catégories principales",
+      "short_name": "Catégories",
+      "url": "./index.html#categories",
+      "icons": [{ "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Kits d'entretien",
+      "short_name": "Kits",
+      "url": "./index.html#promotions",
+      "icons": [{ "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
