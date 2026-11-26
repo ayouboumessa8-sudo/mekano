@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayouboumessa8-sudo.github.io/mekano/sitemap.xml

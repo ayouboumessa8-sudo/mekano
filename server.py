@@ -1,9 +1,10 @@
 import gzip
 import http.server
 import socketserver
+import os
 from pathlib import Path
 
-PORT = 8080
+PORT = int(os.environ.get("PORT", "8080"))
 GZIP_EXTS = {".html", ".js", ".json", ".webmanifest", ".css", ".svg"}
 
 

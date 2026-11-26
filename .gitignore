@@ -1,0 +1,18 @@
+.DS_Store
+.arena/
+image-search/
+uploads/
+assets/*.jpg
+assets/part-*.jpg
+assets/tyre-*.jpg
+assets/acc-*.jpg
+__pycache__/
+*.zip
+# Local secrets and tooling
+.env
+.env.*
+!.env.example
+node_modules/
+playwright-report/
+test-results/
+.DS_Store

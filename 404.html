@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B0F14" />
+  <title>Page introuvable — MEKANO® Maroc</title>
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="./assets/icon-192.png" type="image/png" />
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Montserrat,Arial,sans-serif}body{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 80% 15%,rgba(255,106,0,.18),transparent 30%),#0B0F14;color:#fff}.panel{width:min(100%,680px);padding:clamp(28px,6vw,58px);border:1px solid rgba(255,255,255,.12);border-radius:26px;background:rgba(18,24,33,.94);box-shadow:0 30px 100px rgba(0,0,0,.35);text-align:center}.brand{display:inline-flex;align-items:center;gap:12px;font-weight:900;font-style:italic;font-size:clamp(25px,5vw,34px);letter-spacing:.08em}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#FF6A00;color:#0B0F14;font-size:24px}.code{margin:32px 0 6px;color:#FF6A00;font-weight:900;font-size:clamp(64px,14vw,112px);line-height:1}.title{margin:12px 0;font-size:clamp(22px,4vw,32px);font-weight:800}.desc{max-width:480px;margin:0 auto;color:#AEB8C5;line-height:1.7;font-size:14px}.links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:28px}.links a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:11px;text-decoration:none;font-size:13px;font-weight:800;color:#fff;background:#202B39;border:1px solid rgba(255,255,255,.12)}.links a.primary{color:#fff;background:#FF6A00;border-color:#FF6A00}.links a:hover{filter:brightness(1.08)}.lang{margin-top:24px;border:0;background:transparent;color:#AEB8C5;text-decoration:underline;cursor:pointer;font:inherit;font-size:12px}
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <div class="brand"><span class="brand-mark">M</span><span>MEKANO</span></div>
+    <div class="code">404</div>
+    <h1 class="title" id="title">Cette page est introuvable</h1>
+    <p class="desc" id="desc">Le lien est peut-être incorrect ou la page a été déplacée. Retrouvez les catalogues MEKANO depuis l'accueil.</p>
+    <nav class="links" aria-label="Navigation principale">
+      <a class="primary" href="./" id="home">Pièces auto</a>
+      <a href="./pneus.html" id="tyres">Pneus</a>
+      <a href="./accessoires.html" id="accessories">Accessoires</a>
+    </nav>
+    <button class="lang" type="button" id="lang">العربية</button>
+  </main>
+  <script>
+    document.getElementById("lang").addEventListener("click", () => {
+      const ar = document.documentElement.lang !== "ar";
+      document.documentElement.lang = ar ? "ar" : "fr";
+      document.documentElement.dir = ar ? "rtl" : "ltr";
+      document.getElementById("title").textContent = ar ? "الصفحة غير موجودة" : "Cette page est introuvable";
+      document.getElementById("desc").textContent = ar ? "قد يكون الرابط غير صحيح أو تم نقل الصفحة. اكتشف أقسام MEKANO من الصفحة الرئيسية." : "Le lien est peut-être incorrect ou la page a été déplacée. Retrouvez les catalogues MEKANO depuis l'accueil.";
+      document.getElementById("home").textContent = ar ? "قطع الغيار" : "Pièces auto";
+      document.getElementById("tyres").textContent = ar ? "الإطارات" : "Pneus";
+      document.getElementById("accessories").textContent = ar ? "الإكسسوارات" : "Accessoires";
+    });
+  </script>
+</body>
+</html>
